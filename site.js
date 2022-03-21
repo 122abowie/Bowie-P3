@@ -27,6 +27,7 @@ const vue_app = Vue.createApp({
       created () {
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
+
             })
       },
       data() {
@@ -34,6 +35,9 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            title: 'IMDB + Atticus Top 8 Movies',
+            owner: 'Atticus',
+            github: 'https://122abowie.github.io/Bowie-P3/' 
       }
     },
       methods: {
