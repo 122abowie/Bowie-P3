@@ -37,7 +37,7 @@ const vue_app = Vue.createApp({
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
             title: 'IMDB + Atticus Top 8 Movies',
             owner: 'Atticus',
-            github: 'https://122abowie.github.io/Bowie-P3/' 
+            github: 'https://122abowie.github.io/Bowie-P3/'
       }
     },
       methods: {
