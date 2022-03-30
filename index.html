@@ -36,10 +36,10 @@
 
 	      <div class="container" >
 
-	        <div v-for="movie in movies" class="col-md-6">
+	        <div v-for="(movie,index) in movies" class="col-md-6">
 	            <div class="thumbnail">
 
-						<img class="poster" :src="movie.posters[0]"/>
+						<img v-on:click= "posterClick(index)" class="poster" :src="movie.posters[movie.posterindex]"/>
 						<div class="imageInfo">{{ movie.posterindex }}</div>
 
 						<p class="title">{{ movie.title }} ({{ movie.country }})</p>

@@ -83,7 +83,11 @@ getMonthText(dateArray){
         break;
   }
   return month + " " + dateArray[2] + ", " + dateArray[0]
-    }
+},
+posterClick(index) {
+
+  return this.movies[index].posterindex++;
+}
   }
 })
 
