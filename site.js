@@ -85,11 +85,14 @@ getMonthText(dateArray){
   return month + " " + dateArray[2] + ", " + dateArray[0]
 },
 posterClick(index) {
-
   return this.movies[index].posterindex++;
+
 },
 timeText(minutes){
 return Math.trunc(minutes / 60) +" hours " + minutes % 60 + " minutes";
+},
+imageInfo() {
+
 }
   }
 })
