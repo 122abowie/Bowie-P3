@@ -85,7 +85,11 @@ getMonthText(dateArray){
   return month + " " + dateArray[2] + ", " + dateArray[0]
 },
 posterClick(index) {
-  return this.movies[index].posterindex++;
+  if(this.movies[index].posterindex >= this.movies[index].posters.length - 1) {
+    this.movies[index].posterindex = 0
+  } else {
+    this.movies[index].posterindex++;
+  }
 
 },
 timeText(minutes){
