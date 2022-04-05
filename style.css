@@ -93,8 +93,7 @@ body {
 }
 
 /* This shapes your like and dislike buttons */
-.likes {
-}
+.likes,
 .dislikes {
     cursor: pointer;
     display: inline-block;
